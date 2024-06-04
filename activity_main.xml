@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/TblMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/TimeRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button android:text="neee" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/CvsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="here"
+                android:id="@+id/TxtView"/>
+
+            <LinearLayout
+                android:id="@+id/CvsLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/BtnRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnUp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:textSize="10dp"
+                        android:text="up" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnLeft"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:textSize="10dp"
+                        android:text="left" />
+
+                    <Button
+                        android:id="@+id/btnRight"
+                        android:layout_marginLeft="-35dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:textSize="10dp"
+                        android:text="right"/>
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="fire"/>
+
+
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btnDown"
+                        android:layout_marginLeft="120dp"
+                        android:layout_width="60dp"
+                        android:text="down"
+                        android:layout_height="40dp"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+
+
+            </TableLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
