@@ -26,21 +26,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //REAL_CODE_ERROR:
         //setContentView(R.layout.activity_main);btnNormalShot = (Button) findViewById(R.id.btnNormalShot);
-        setContentView(R.layout.activity_main);
-        CvsLay = (LinearLayout) findViewById(R.id.CvsLay);
-        //Mb = new MainBoard(this);
+        //setContentView(R.layout.activity_main);
+        //CvsLay = (LinearLayout) findViewById(R.id.CvsLay);
         //CvsLay.addView(Mb);
-        Up = (Button) findViewById(R.id.btnUp);
-        Up.setOnClickListener(this);
-        Down = (Button) findViewById(R.id.btnDown);
-        Down.setOnClickListener(this);
-        Left = (Button) findViewById(R.id.btnLeft);
-        Left.setOnClickListener(this);
-        Right = (Button) findViewById(R.id.btnRight);
-        Right.setOnClickListener(this);
-        p = new Player(1);
-        txt = (TextView) findViewById(R.id.TxtView);
+        //CANVAS_VIEW:
+        Mb = new MainBoard(this); setContentView(Mb);
+        //RIGHT_NOW:
+        //Up = (Button) findViewById(R.id.btnUp);
+        //Up.setOnClickListener(this);
+        //Down = (Button) findViewById(R.id.btnDown);
+        //Down.setOnClickListener(this);
+        //Left = (Button) findViewById(R.id.btnLeft);
+        //Left.setOnClickListener(this);
+        //Right = (Button) findViewById(R.id.btnRight);
+        //Right.setOnClickListener(this);
+        //p = new Player(1);
+        //txt = (TextView) findViewById(R.id.TxtView);
+
 
     }
 
