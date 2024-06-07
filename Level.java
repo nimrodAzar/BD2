@@ -30,7 +30,7 @@ class Level{
     public void MakeSeq1(Canvas canvas){
         int bbl = (canvas.getWidth()-50);
         Random R = new Random();
-        int seqNum = R.nextInt(3);
+        int seqNum = R.nextInt(4);
         Log.v("Ii", Integer.toString(seqNum));
         if (seqNum == 1){
             this.sequence.add(0,new Projectile(5,90,false,bbl*2/7,1));
@@ -42,6 +42,12 @@ class Level{
             this.sequence.add(1,new Projectile(5,90,false,bbl*3/7,1));
             this.sequence.add(2,new Projectile(5,90,false,bbl*5/7,1));
             this.sequence.add(3,new Projectile(5,90,false,bbl-25,1));
+        }
+        if (seqNum == 3){
+            this.sequence.add(0, new Projectile(7,45,false,1,1));
+            this.sequence.add(1, new Projectile(7,315,false,1,bbl-1));
+            this.sequence.add(2, new Projectile(7,135,false,bbl-1,1));
+            this.sequence.add(3, new Projectile(7,225,false,bbl-1,bbl-1));
         }
 
         Log.d("I9",Integer.toString(this.sequence.size()));
