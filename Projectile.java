@@ -26,7 +26,7 @@ class Projectile{
     public void SetPosX(int val){this.posX = val;}
     public void SetPosY(int val){this.posY = val;}
     public void Move(){
-        SetPosX((int)(GetSpeed()*Math.cos(GetAngle())));
-        SetPosY((int)(GetSpeed()*Math.sin(GetAngle())));
+        SetPosX(GetPosX() + (int)(GetSpeed()*Math.cos(Math.toRadians(GetAngle()))));
+        SetPosY(GetPosY() + (int)(GetSpeed()*Math.sin(Math.toRadians(GetAngle()))));
     }
 }
