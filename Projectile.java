@@ -6,6 +6,7 @@ class Projectile{
     private boolean isPassive;
     private int posX;
     private int posY;
+    private boolean pColor;
 
     public Projectile(int vel, double ang, boolean IsP, int x, int y){
         this.speed = vel;
@@ -13,8 +14,10 @@ class Projectile{
         this.isPassive = IsP;
         this.posX = x;
         this.posY = y;
+        this.pColor = IsP;
     }
 
+    public boolean GetPColor(){return this.pColor;}
     public int GetSpeed(){return this.speed;}
     public double GetAngle(){return this.angle;}
     public boolean GetIsPassive(){return this.isPassive;}
