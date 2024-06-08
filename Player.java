@@ -3,25 +3,20 @@ package co.il.bulletdance;
 class Player{
     private int id;
     private int health;
-    private boolean isAlive;
     private int posX;
     private int posY;
     private int fireSpeed;
 
     public Player(int ID){
         this.id = ID;
-        this.isAlive = true;
-        this.posX = 3;
-        this.posY = 3;
+        this.posX = 4;
+        this.posY = 5;
         this.fireSpeed = 1;
         this.health = 5;
     }
 
     public int GetHealth(){
         return this.health;
-    }
-    public boolean GetIsAlive() {
-        return this.isAlive;
     }
     public int GetId(){return this.id;}
     public int GetPosX(){
@@ -42,13 +37,12 @@ class Player{
     }
     public void TakeHit(){
         this.health--;
-        if (IsDead()) this.isAlive = false;
     }
     public boolean IsDead(){
         return this.health<=0;
     }
-    public void Shoot(){
-        new Projectile(1,90,true,GetPosX(),GetPosY()).Move();
+    public Projectile Shoot(){
+        return new Projectile(10,270,true,GetPosX(),GetPosY());
     }
 }
 
